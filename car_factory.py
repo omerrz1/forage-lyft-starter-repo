@@ -39,7 +39,7 @@ class CarFactory():
         return Car(engine=cls.engine,battery=cls.battery)
 
     
-
+    @classmethod
     def create_thovex(cls,current_date, last_service_date, current_mileage, last_service_mileage):
         cls.engine = WilloughbyEngine(current_mileage=current_mileage,last_service_mileage=last_service_mileage)
         cls.battery = NubbinBattery(last_service_date=last_service_date,current_date=current_date)
